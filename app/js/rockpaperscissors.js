@@ -22,7 +22,7 @@ function randomPlay() {
 ////////////////////////////////////////////////
 
 function getPlayerMove(move) {
-    if ((move === (undefined || null)) === true) {
+    if ( ( (move === undefined) || (move === null) ) === true) {
         getInput();
     } else {
         return move;
@@ -34,7 +34,7 @@ function getPlayerMove(move) {
 }
 
 function getComputerMove(move) {
-    if ((move === (undefined || null)) === true) {
+    if ( ( (move === undefined) || (move === null) ) === true) {
         randomPlay();
     } else {
         return move;
