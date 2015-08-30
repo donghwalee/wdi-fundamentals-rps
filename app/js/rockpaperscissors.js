@@ -22,6 +22,11 @@ function randomPlay() {
 ////////////////////////////////////////////////
 
 function getPlayerMove(move) {
+    if ((move === (undefined || null)) === true) {
+        getInput();
+    } else {
+        return move;
+    }
     // Write an expression that operates on a variable called `move`
     // If a `move` has a value, your expression should evaluate to that value.
     // However, if `move` is not specified / is null, your expression should equal `getInput()`.
@@ -29,6 +34,11 @@ function getPlayerMove(move) {
 }
 
 function getComputerMove(move) {
+    if ((move === (undefined || null)) === true) {
+        randomPlay();
+    } else {
+        return move;
+    }
     // Write an expression that operates on a variable called `move`
     // If a `move` has a value, your expression should evaluate to that value.
     // However, if `move` is not specified / is null, your expression should equal `randomPlay()`.
